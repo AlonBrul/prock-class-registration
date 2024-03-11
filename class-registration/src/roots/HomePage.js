@@ -1,17 +1,18 @@
-import './App.css';
+import '../App.css';
+import User from './User';
 
-function App() {
+function HomePage() {
   return (
     <div>
       <div class="dashboard">
         <button class="menu-btn fa-solid fa-bars"></button>
       </div>
 
-      <div class="user">דניאל מלכיאלוביץ</div>
+      <User />
 
       <div class="class"></div>
     </div>
   );
 }
 
-export default App;
+export default HomePage;
