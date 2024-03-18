@@ -45,26 +45,28 @@ body {
 }
 
 .user {
-    background-color: var(--theme-color);
     color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10%;
-    margin: 10px 10px;
+    margin-left: 30px;
     overflow: hidden;
-    text-align: center;
     font-weight: bold;
     letter-spacing: 1.3px;
+}
+
+.class-list { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
 }
 
 .class-card {
     background-color: var(--theme-color);
     color: var(--secondary-color);
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
     margin: 20px;
     cursor: pointer;
@@ -89,11 +91,9 @@ body {
     background-color: var(--theme-color);
     color: var(--secondary-color);
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 150px;
     height: 100px;
+    line-height: 100px;
     font-size: 50px;
     border-radius: 10px;
     margin: 20px;
