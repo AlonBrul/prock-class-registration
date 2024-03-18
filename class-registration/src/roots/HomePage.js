@@ -1,4 +1,5 @@
 import '../App.css';
+import ClassList from '../ClassList'
 import Class from '../Class';
 import User from '../User';
 
@@ -10,9 +11,10 @@ function HomePage() {
         <User />
         <button className="menu-btn fa-solid fa-bars"></button>
       </div>
-
-      <Class name='ג-ד 2' students={students} />
-      <Class name='ה-ו 5' students={students} />
+      <ClassList>
+        <Class name='ג-ד 2' students={students} />
+        <Class name='ה-ו 5' students={students} />
+      </ClassList>
     </div>
   );
 }

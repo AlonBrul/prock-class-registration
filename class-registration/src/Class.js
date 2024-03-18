@@ -10,16 +10,18 @@ const Class = (props) => {
 
     const ShowStudents = () => {
         if (showStudents) {
-            setShowStudents(true)
-        } else {
             setShowStudents(false)
+        } else {
+            setShowStudents(true)
         }
     }
 
     return <div>
         <button className="class-card big-card" onClick={ShowStudents}>{name}</button>
         <div className='student-list'>
-            {students}
+            {
+                 showStudents ? students : null 
+            }
         </div>
     </div>
 }
